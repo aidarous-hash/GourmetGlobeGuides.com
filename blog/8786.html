@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe, Restaurant, Games Blog</title>
+    <meta name="description" content="Welcome to our blog where you can find the latest news, reviews, and updates about cafes, restaurants, and games.">
+    <meta name="keywords" content="cafe, restaurant, games, blog, reviews, news, updates">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Cafe, Restaurant, Games Blog">
+    <meta property="og:description" content="Welcome to our blog where you can find the latest news, reviews, and updates about cafes, restaurants, and games.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourblogwebsite.com">
+    <meta property="og:image" content="https://yourblogwebsite.com/og-image.jpg">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:title" content="Cafe, Restaurant, Games Blog">
+    <meta name="twitter:description" content="Welcome to our blog where you can find the latest news, reviews, and updates about cafes, restaurants, and games.">
+    <meta name="twitter:image" content="https://yourblogwebsite.com/twitter-image.jpg">
+
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content Styles */
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        section a {
+            color: #007bff;
+            transition: all 0.3s ease;
+        }
+
+        section a:hover {
+            color: #ffd700;
+        }
+
+        /* Blog Post Styles */
+        article {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        article a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Comments Section Styles */
+        #comments {
+            margin-top: 30px;
+        }
+
+        #commentList {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        #commentList li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        #commentForm {
+            margin-top: 20px;
+        }
+
+        #commentForm label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        #commentForm input,
+        #commentForm textarea,
+        #commentForm select,
+        #searchForm input,
+        #signupForm input,
+        #loginForm input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            font-size: 1.1rem;
+        }
+
+        #commentForm button,
+        #searchForm button,
+        #signupForm button,
+        #loginForm button {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #commentForm button:hover,
+        #searchForm button:hover,
+        #signupForm button:hover,
+        #loginForm button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cafe, Restaurant, Games Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Blog!</h2>
+        <p>Discover the latest news, reviews, and updates about cafes, restaurants, and games.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about sharing our experiences and insights about the world of cafes, restaurants, and games.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <form id="searchForm">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Search for cafe, restaurant, or game...">
+            <button type="submit">Search</button>
+        </form>
+        <article>
+            <h3>Review: Best Cafe in Town</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum nunc. Duis feugiat leo sed odio eleifend, nec finibus tortor lobortis.</p>
+            <label for="rating">Rating:</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+            <a href="#">Read more</a>
+            <!-- Comments Section -->
+            <section id="comments">
+                <h4>Comments</h4>
+                <ul id="commentList">
+                    <!-- Comments will be dynamically added here -->
+                </ul>
+                <form id="commentForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="topic">Select Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="cafes">Cafes</option>
+                        <option value="games">Games</option>
+                        <option value="restaurants">Restaurants</option>
+                        <option value="others">Others</option>
+                    </select><br>
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" required></textarea><br>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </section>
+            <!-- End of Comments Section -->
+        </article>
+        <!-- More blog posts go here -->
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername" required><br>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required><br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cafe, Restaurant, Games Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get values from form inputs
+            var name = document.getElementById('name').value;
+            var topic = document.getElementById('topic').value;
+            var rating = document.getElementById('rating').value;
+            var comment = document.getElementById('comment').value;
+
+            // Create new comment list item with rating
+            var li = document.createElement('li');
+            li.textContent = name + ' (' + topic + '), Rating: ' + rating + '/5 - ' + comment;
+
+            // Append new comment to the comment list
+            document.getElementById('commentList').appendChild(li);
+
+            // Clear form inputs
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+            document.getElementById('rating').value = ''; // Clear the rating input
+        });
+
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get search query
+            var searchQuery = document.getElementById('search').value.toLowerCase();
+
+            // Loop through comment list and show/hide based on search query
+            var comments = document.getElementById('commentList').getElementsByTagName('li');
+            for (var i = 0; i < comments.length; i++) {
+                var commentText = comments[i].textContent.toLowerCase();
+                if (commentText.includes(searchQuery)) {
+                    comments[i].style.display = 'block';
+                } else {
+                    comments[i].style.display = 'none';
+                }
+            }
+        });
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get values from signup form inputs
+            var signupUsername = document.getElementById('signupUsername').value;
+            var signupPassword = document.getElementById('signupPassword').value;
+
+            // Here you can add your signup logic, such as sending the data to a server or storing it locally
+            // For demonstration purposes, we'll simply log the values to the console
+            console.log('Signup Username:', signupUsername);
+            console.log('Signup Password:', signupPassword);
+
+            // Clear signup form inputs
+            document.getElementById('signupUsername').value = '';
+            document.getElementById('signupPassword').value = '';
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get values from login form inputs
+            var loginUsername = document.getElementById('loginUsername').value;
+            var loginPassword = document.getElementById('loginPassword').value;
+
+            // Here you can add your login logic, such as verifying the credentials with a server or checking them locally
+            // For demonstration purposes, we'll simply log the values to the console
+            console.log('Login Username:', loginUsername);
+            console.log('Login Password:', loginPassword);
+
+            // Clear login form inputs
+            document.getElementById('loginUsername').value = '';
+            document.getElementById('loginPassword').value = '';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
